@@ -12,7 +12,8 @@
     <title>Foto of The Day🚀</title>
 </head>
 <body>
-        <div id='stars'></div>     
+
+<div id='stars'></div> 
 <div class="home">
     <div class="home-content">
         <div class="home-header">
@@ -20,7 +21,7 @@
         </div>
         <div class="home-body"><h1 id="apod_title"></h1><p id="apod_explaination"></p>
             <form><a class="btn btn-prev"><span class="span-left">Previous</span></a><a class="btn btn-next"><span class="span-right">Next</span></a></form>
-              <input type="checkbox" value="None" name="Toggle" onchange="toggle(body,this)">
+            <div id="switcher"><p class="fa fa-star-o" aria-hidden="true"></p><input type="checkbox" id="switch" onchange="toggle(body,this)" checked="true"><label for="switch" ></label><p class="fa fa-star" aria-hidden="true"></p></div>
         </div>
     </div>
     <div class="media">
@@ -33,6 +34,7 @@
             </div>
           
     </div>
+      
 </div>
 
 </body>

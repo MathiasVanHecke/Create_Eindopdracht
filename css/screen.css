@@ -9,7 +9,8 @@
 
 html, body {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+ }
 
 body {
     background-color: #151921;
@@ -18,9 +19,7 @@ body {
     line-height: 1.5;
     color: #fff;
     text-align: center;
-    -webkit-font-smoothing: antialiased;
 }
-
 
 .logo{
     width: 75px;
@@ -30,8 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 0 15px;
-    border: 10px solid #eee;
+    padding: 0 15px; 
 }
 
 .home-content{
@@ -70,10 +68,8 @@ p {
     position: relative;
     color: #fff;
     cursor: pointer;
-    text-decoration: none;
     margin: 5px;
     transition: all 0.5s;
-
     max-width: 115px;
     min-width: 115px;
 }
@@ -119,6 +115,52 @@ span:after{
     right:0;
 }
 
+/* ------- Checkbox -------- */
+input[type=checkbox]{
+        
+        visibility: hidden;
+    }
+    
+    label {
+        cursor: pointer;
+        width: 55px;
+        height: 30px;
+        background: transparent;
+        display: inline-block;
+        position: relative;
+        margin-right: 15px;
+        border: 1px solid white;
+    }
+    
+    label:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        transition: 0.3s;
+    }
+    
+    input:checked + label {
+        background: transparent;
+    }
+    
+    input:checked + label:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+    
+    label:active:after {
+        width: 22px;
+    }
+    
+#switcher{
+    font-size: 30px;
+    margin-top: 15px;
+    
+}
 
 .media{
     flex-grow: 1;
@@ -127,7 +169,7 @@ span:after{
 }
 
 .media-content{
-    /*min-height: 45vh;*/
+
     width:90%;
     align-self: center;
     border-radius: 4px;
@@ -141,7 +183,6 @@ span:after{
     }
     h1 {
         font-size: 32px;
-        line-height: 1.25;
         margin-bottom: 20px;
     }
     p {
@@ -149,12 +190,12 @@ span:after{
         margin-bottom: 25px;
     }
     .btn {
-        padding: 12px 30px 14px; }
+        padding: 7px 30px 7px; }
     .home {
         padding: 0 30px;
     }
     .home-content {
-        margin-top: 60px;
+        margin-top: 45px;
     }
 }
 
@@ -200,9 +241,7 @@ span:after{
 }
 
 
-/* TEST INPUT VELD */
-
-
+/* EMAIL ADRES */
 input {
     border-style: none;
     background: transparent;

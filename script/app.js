@@ -32,9 +32,9 @@ $.ajax({
 function toggle(x, _this) {
   var stylesheet = document.styleSheets[2]
   if (_this.checked) {
-      stylesheet.disabled = true;
+      stylesheet.disabled = false;
 
   } else  {
-    stylesheet.disabled = false;
+    stylesheet.disabled = true;
   }
 }
