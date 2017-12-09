@@ -72,7 +72,13 @@ p {
     transition: all 0.5s;
     max-width: 115px;
     min-width: 115px;
+    min-height: 40px;
 }
+
+.disabled{
+    cursor: not-allowed;
+}
+
 
 span{
     position: relative;
@@ -169,8 +175,8 @@ input[type=checkbox]{
 }
 
 .media-content{
-
-    width:90%;
+    max-height: 75%;
+    max-width:90%;
     align-self: center;
     border-radius: 4px;
     overflow: hidden;

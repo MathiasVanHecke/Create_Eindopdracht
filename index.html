@@ -8,7 +8,9 @@
     <link rel="icon" href="http://freedesignfile.com/upload/2017/08/rocket-icon-vector.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script/date.js"></script>
     <script src="script/app.js"></script>
+ 
 
     <title>Foto of The Day</title>
 </head>
@@ -21,7 +23,7 @@
             <img class="logo" src="./img/logo_nasa.png" alt="Logo Nasa">
         </div>
         <div class="home-body"><h1 id="apod_title"></h1><p id="apod_explaination"></p>
-            <form><a class="btn btn-prev"><span class="span-left">Previous</span></a><a class="btn btn-next"><span class="span-right">Next</span></a></form>
+            <button class="btn btn-prev" onclick="prevPic()" ><span class="span-left">Previous</span></button><button class="btn btn-next" id="next" onclick="nextPic()" ><span class="span-right" id="right" >Next</span></button>
             <div id="switcher"><p class="fa fa-star-o" aria-hidden="true"></p><input type="checkbox" id="switch" onchange="toggle(body,this)" checked="true"><label for="switch" ></label><p class="fa fa-star" aria-hidden="true"></p></div>
         </div>
     </div>
