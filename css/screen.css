@@ -12,6 +12,10 @@ html, body {
     padding: 0;
  }
 
+ html{
+     height: 100vh;
+ }
+
 body {
     background-color: #151921;
     font-family: MotivaBold,sans-serif;
@@ -30,6 +34,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding: 0 15px; 
+    z-index: 999;
 }
 
 .home-content{
@@ -37,6 +42,7 @@ body {
     padding: 0 5%;
     margin: 0 auto 0;
     max-width: 600px;
+    z-index: 999;
 }
 
 .home-header{
@@ -172,6 +178,7 @@ input[type=checkbox]{
     flex-grow: 1;
     margin-top: 40px;
     padding-bottom: 50px;
+    z-index: 999;
 }
 
 .media-content{
@@ -182,6 +189,7 @@ input[type=checkbox]{
     overflow: hidden;
     background-color: #202631;
     margin-bottom: 10px;
+    z-index: 999;
 }
 
 @media (min-width: 600px) {
@@ -277,10 +285,9 @@ input {
       background-position: 100% 0;
     }
   }
+
   .email-style {
-      position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    position: relative;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -292,6 +299,7 @@ input {
     border-radius: 3px;
     padding: 6px;
     background: #293140;
+    color: #7881A1;
   }
   .email-style:after {
     content: "";
@@ -312,14 +320,11 @@ input {
   }
    
   .email-style input {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
     color: #A4ABB8;
     font-size: 16px;
-    line-height: 2.4rem;
     vertical-align: middle;
-  
+    margin-left: 3px;
   }
   .email-style input::-webkit-input-placeholder {
     color: #7881A1;
@@ -328,9 +333,7 @@ input {
   .email-style button {
     color: #7881A1;
     font-size: 30px;
-    line-height: 2.4rem;
     vertical-align: middle;
-    -webkit-transition: color .25s;
     transition: color .25s;
     margin-bottom: 3px;
     margin-right: 5px;
