@@ -181,6 +181,7 @@ input[type=checkbox]{
     border-radius: 4px;
     overflow: hidden;
     background-color: #202631;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 600px) {
@@ -211,14 +212,11 @@ input[type=checkbox]{
         justify-content: center;
 }
     .home-content {
-        margin-top: 50px;
-        display: flex;
+       
         align-self: center;
-        flex-direction: column;
         flex-basis: 45%;
         max-width: 700px;
         margin-top: 0;
-        justify-content: center;
 }
     .home-content:after {
         position: absolute;
@@ -329,12 +327,14 @@ input {
    
   .email-style button {
     color: #7881A1;
-    font-size: 2.4rem;
+    font-size: 30px;
     line-height: 2.4rem;
     vertical-align: middle;
     -webkit-transition: color .25s;
     transition: color .25s;
+    margin-bottom: 3px;
+    margin-right: 5px;
   }
   .email-style button:hover {
-    color: #A4ABB8;
+    color: #fff;
   }

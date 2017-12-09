@@ -20,7 +20,9 @@
 <div class="home">
     <div class="home-content">
         <div class="home-header">
-            <img class="logo" src="./img/logo_nasa.png" alt="Logo Nasa">
+            <a href="https://www.nasa.gov">
+                <img class="logo" src="./img/logo_nasa.png" alt="Logo Nasa">
+            </a>
         </div>
         <div class="home-body"><h1 id="apod_title"></h1><p id="apod_explaination"></p>
             <button class="btn btn-prev" onclick="prevPic()" ><span class="span-left">Previous</span></button><button class="btn btn-next" id="next" onclick="nextPic()" ><span class="span-right" id="right" >Next</span></button>
@@ -33,12 +35,23 @@
             <p id="copyright"></p>
             <div class="email-style">
                 <input class="" type="email" placeholder="Subscribe to my newsletter">
-                <button type="submit"><i class="fa fa-angle-right"></i></button>
+                <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
             </div>
           
     </div>
       
 </div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110944486-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110944486-1');
+</script>
+
 
 </body>
 </html>
