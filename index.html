@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <link rel="stylesheet" type="text/css" href="css/stars.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script/app.js"></script>
@@ -11,8 +12,7 @@
     <title>Foto of The Day🚀</title>
 </head>
 <body>
-
-
+        <div id='stars'></div>     
 <div class="home">
     <div class="home-content">
         <div class="home-header">
@@ -20,6 +20,7 @@
         </div>
         <div class="home-body"><h1 id="apod_title"></h1><p id="apod_explaination"></p>
             <form><a class="btn btn-prev"><span class="span-left">Previous</span></a><a class="btn btn-next"><span class="span-right">Next</span></a></form>
+              <input type="checkbox" value="None" name="Toggle" onchange="toggle(body,this)">
         </div>
     </div>
     <div class="media">
@@ -30,7 +31,7 @@
                 <input class="" type="email" placeholder="Subscribe to my newsletter">
                 <button type="submit"><i class="fa fa-angle-right"></i></button>
             </div>
-            <!-- <input type="checkbox" value="None" name="Toggle" onchange="toggle(body,this)"> -->
+          
     </div>
 </div>
 

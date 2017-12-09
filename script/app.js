@@ -30,10 +30,11 @@ $.ajax({
 });
 
 function toggle(x, _this) {
+  var stylesheet = document.styleSheets[2]
   if (_this.checked) {
-      document.body.style.color='#fff'
+      stylesheet.disabled = true;
 
   } else  {
-    document.body.style.backgroundColor = '#151921'
+    stylesheet.disabled = false;
   }
 }
