@@ -26,7 +26,7 @@
         </div>
         <div class="home-body"><h1 id="apod_title"></h1><p id="apod_explaination"></p>
             <button class="btn btn-prev" onclick="prevPic()" ><span class="span-left">Previous</span></button><button class="btn btn-next" id="next" onclick="nextPic()" ><span class="span-right" id="right" >Next</span></button>
-            <div id="switcher"><p class="fa fa-star-o" aria-hidden="true"></p><input type="checkbox" id="switch" onchange="toggle(body,this)" checked="true"><label for="switch" ></label><p class="fa fa-star" aria-hidden="true"></p></div>
+            <div id="switcher"><p class="fa fa-star-o" aria-hidden="true" onclick="toggleStars(body,0)" ></p><input type="checkbox" id="switch" onchange="toggle(body,this)" checked="true"><label for="switch" ></label><p class="fa fa-star" aria-hidden="true" onclick="toggleStars(body,1)"></p></div>
         </div>
     </div>
     <div class="media">
@@ -41,15 +41,6 @@
     </div>
       
 </div>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110944486-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-110944486-1');
 </script>
 
 

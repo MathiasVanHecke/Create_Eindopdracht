@@ -10,14 +10,12 @@ var x = 1
 
 
 function prevPic(){
-    console.log("prev")
     var prev = (x).days().ago();
     loadPic(prev);
     x = x + 1;
 }
 
 function nextPic(){
-    console.log("next")
     var next = dateGlobal.add(1).day();
     loadPic(next);
     x = x - 1;
@@ -48,10 +46,8 @@ function loadPic(value) {
            
           }
           else {
-
               $("#apod_img_id").css("display", "inline");
               $("#apod_img_id").attr("src", result.url);
- 
           }
 
           $("#apod_explaination").text(result.explanation);
@@ -63,7 +59,7 @@ function loadPic(value) {
           if(result.date == today.toISOString().slice(0,10)){
              rightSpan.className += " disabled";
              rightButton.className += " disabled";
-              console.log("disabled");
+            
           }
           else{
               rightSpan.className = "span-right";
@@ -87,3 +83,20 @@ function toggle(x, _this) {
     stylesheet.disabled = true;
   }
 }
+
+//Stars Clicked
+
+function toggleStars(x, change){
+    var checkbox = document.getElementById("switch")
+    var stylesheet = document.styleSheets[2]
+
+    if (change==0){
+        stylesheet.disabled = true
+        checkbox.checked = false
+    }
+    else if(change==1){
+        stylesheet.disabled = false
+        checkbox.checked = true
+    }
+}
+

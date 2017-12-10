@@ -7,6 +7,10 @@
     src: url(../font/Motiva-Sans-Light.ttf)
 }
 
+p::selection{
+    background: #51607E;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -340,4 +344,8 @@ input {
   }
   .email-style button:hover {
     color: #fff;
+  }
+
+  .fa:hover{
+    cursor: pointer;
   }
