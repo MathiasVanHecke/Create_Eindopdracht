@@ -10,39 +10,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script/date.js"></script>
     <script src="script/app.js"></script>
- 
-
     <title>Foto of The Day</title>
 </head>
 <body>
-
+ <!-- Background Stars    -->
 <div id='stars'></div> 
+<!-- Main -->
 <div class="home">
     <div class="home-content">
+        <!-- Logo -->
         <div class="home-header">
-            <a href="https://www.nasa.gov">
-                <img class="logo" src="./img/logo_nasa.png" alt="Logo Nasa">
-            </a>
+            <a href="https://www.nasa.gov"><img class="logo" src="./img/logo_nasa.png" alt="Logo Nasa"></a>
         </div>
+        <!-- tekst -->
         <div class="home-body"><h1 id="apod_title"></h1><p id="apod_explaination"></p>
-            <button class="btn btn-prev" onclick="prevPic()" ><span class="span-left">Previous</span></button><button class="btn btn-next" id="next" onclick="nextPic()" ><span class="span-right" id="right" >Next</span></button>
-            <div id="switcher"><p class="fa fa-star-o" aria-hidden="true" onclick="toggleStars(body,0)" ></p><input type="checkbox" id="switch" onchange="toggle(body,this)" checked="true"><label for="switch" ></label><p class="fa fa-star" aria-hidden="true" onclick="toggleStars(body,1)"></p></div>
+            <!-- Knoppen -->
+            <button class="btn btn-prev" onclick="prevPic()" ><span class="span-left">Previous</span></button>
+            <button class="btn btn-next" id="next" onclick="nextPic()" ><span class="span-right" id="right" >Next</span></button>
+            <div id="switcher"><p class="fa fa-star-o" aria-hidden="true" onclick="toggleStars(body,0)" ></p>
+            <input type="checkbox" id="switch" onchange="toggle(body,this)" checked="true"><label for="switch" ></label>
+            <p class="fa fa-star" aria-hidden="true" onclick="toggleStars(body,1)"></p></div>
         </div>
     </div>
     <div class="media">
-            <img id="apod_img_id" class="media-content" />
-            <iframe id="apod_vid_id" type="text/html"  frameborder="0" class="media-content"></iframe>
-            <p id="copyright"></p>
-            <div class="email-style">
-                <input class="" type="email" placeholder="Subscribe to my newsletter...">
-                <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
-            </div>
-          
+        <!-- Photo -->
+        <img id="apod_img_id" class="media-content" />
+        <iframe id="apod_vid_id" type="text/html" frameborder="0" class="media-content"></iframe>
+        <p id="copyright"></p>
+        <div class="email-style">
+            <!-- Email -->
+            <input class="" type="email" placeholder="Subscribe to my newsletter...">
+            <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+        </div>
     </div>
-      
 </div>
-</script>
-
-
 </body>
 </html>

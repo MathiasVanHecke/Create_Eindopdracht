@@ -8,6 +8,7 @@
   position: fixed; 
 }
 
+/* Sterren annimeren */
 @keyframes animStar {
   from {
     transform: translateY(0px);
