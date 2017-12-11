@@ -92,7 +92,7 @@ p {
 .disabled{
     cursor: not-allowed;
     background-color: #000;
-    opacity: 0.5
+    opacity: 0.5;
 }
 
 
@@ -234,6 +234,11 @@ iframe{
     }
     .home-content {
         margin-top: 45px;
+    }
+
+    iframe{
+        min-height: 25vh;
+        min-width:50vh;
     }
 
 }
