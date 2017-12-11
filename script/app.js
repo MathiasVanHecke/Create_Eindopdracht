@@ -30,10 +30,10 @@ function loadPic(value) {
       url: url,
       success: function(result){
           if("copyright" in result) {
-              $("#copyright").text("Image Credits: " + result.copyright);
+              $("#copyright").text("Image Credits: " + result.copyright + " - " + "Date: " + result.date);
           }
           else {
-              $("#copyright").text("Image Credits: " + "Public Domain");
+              $("#copyright").text("Image Credits: " + "Public Domain"  + " - " + "Date: " + result.date);
           }
 
           $("#apod_vid_id").css("display", "none");
@@ -57,13 +57,16 @@ function loadPic(value) {
           var rightButton = document.getElementById("next")
 
           if(result.date == today.toISOString().slice(0,10)){
+              
              rightSpan.className += " disabled";
              rightButton.className += " disabled";
+             rightButton.disabled = true;
             
           }
           else{
               rightSpan.className = "span-right";
               rightButton.className = "btn btn-next";
+              rightButton.disabled = false;
           }
        
       }
