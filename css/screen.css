@@ -91,6 +91,8 @@ p {
 
 .disabled{
     cursor: not-allowed;
+    background-color: #000;
+    opacity: 0.5
 }
 
 
@@ -203,10 +205,6 @@ input[type=checkbox]{
 }
 
 iframe{
-    min-height: 40vh;
-    min-width:70vh;
-    max-height: 39vh;
-    max-width:69vh;
     border-radius: 4px;
     overflow: hidden;
     background-color: #202631;
@@ -237,6 +235,7 @@ iframe{
     .home-content {
         margin-top: 45px;
     }
+
 }
 
 @media (min-width: 1100px) {
@@ -273,7 +272,13 @@ iframe{
         flex-basis: 55%;
 }
     .media-content {
-        max-width: 85%; }
+        max-width: 85%;
+    }
+
+    iframe{
+        min-height: 35vh;
+        min-width:70vh;
+    }
 }
 
 
